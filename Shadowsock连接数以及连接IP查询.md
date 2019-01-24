@@ -28,8 +28,15 @@
    echo 'port    IP'
    netstat -anp | egrep $pattern | grep -E "tcp.*ESTABLISHED" | awk '{print $4, $5}' | cut -d: -f2 | sort -u
    ```
+4. 
+   ```shell
+   当我们执行netstat命令显示 
+   -bash: netstat: command not found 
+   这是由于网络工具没有安装.执行下面命令就可以了. 
+   yum install net-tools
+   ```
 
-4. 运行文件
+5. 运行文件
 
    ```shell
    #在文件所在文件夹执行
