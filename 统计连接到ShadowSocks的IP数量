@@ -15,7 +15,7 @@
 3. 修改文件内容
 
    ```shell
-   #查看Shadowsock链接数量
+   #查看连接到ShadowSocks的IP数量
    #$regex 正则表达式，用来过滤符合规则的端口，例如1998或19[0-2][0-9]
    #netstat -anp | egrep $regex | grep -E "tcp.*ESTABLISHED" | awk '{print $4, $5}' | cut -d: -f2 | sort -u
    
